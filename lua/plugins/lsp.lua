@@ -37,7 +37,6 @@ return {
                     "clangd",
                     "bashls",
                     "lua_ls",
-                    "tsserver",
                     "jsonls",
                     "cssls",
                     "html",
