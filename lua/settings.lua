@@ -1,42 +1,61 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- Line numbers
+vim.opt.nu = true             -- Show numbers
+vim.opt.relativenumber = true -- Show relative line numbers
 
-vim.opt.smartindent = true
-vim.opt.autoindent = true
+-- Indentation
+vim.opt.smartindent = true -- Enable smart indentation
+vim.opt.autoindent = true  -- Enable automatic indentation
 
-vim.opt.expandtab = true
-vim.opt.softtabstop = 4
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.smarttab = true
+-- Tabs and spaces
+vim.opt.expandtab = true -- Convert tabs to spaces
+vim.opt.softtabstop = 4  -- Number of spaces a <Tab> counts for while editing
+vim.opt.tabstop = 4      -- Number of spaces a <Tab> counts for
+vim.opt.shiftwidth = 4   -- Number of spaces to use for each step of (auto)indent
+vim.opt.smarttab = true  -- Insert 'tabstop' number of spaces when pressing <Tab>
 
-vim.opt.colorcolumn = "81"
+-- Color column
+vim.opt.colorcolumn = "81" -- Highlight column 81
 
-vim.opt.ruler = true
+-- Ruler
+vim.opt.ruler = true -- Show the cursor position all the time
 
-vim.opt.wrap = false
+-- Line wrapping
+vim.opt.wrap = false -- Disable line wrapping
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+-- Search settings
+vim.opt.hlsearch = false -- Disable search highlight
+vim.opt.incsearch = true -- Enable incremental search
 
-vim.opt.mouse = "a"
+-- Mouse support
+vim.opt.mouse = "a" -- Enable mouse support in all modes
 
-vim.opt.scrolloff = 8
+-- Scrolling
+vim.opt.scrolloff = 8     -- Minimum number of screen lines to keep above and below the cursor
+vim.opt.sidescrolloff = 16 -- Minimum number of screen columns to keep to the left and right of the cursor
 
-vim.opt.cursorline = true
+-- Cursor line
+vim.opt.cursorline = true -- Highlight the screen line of the cursor
 
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+-- Splits
+vim.opt.splitbelow = true -- Horizontal splits will be below
+vim.opt.splitright = true -- Vertical splits will be to the right
 
-vim.opt.updatetime = 50
+-- Update time
+vim.opt.updatetime = 1000 -- Faster completion (default is 4000ms)
 
-vim.opt.signcolumn = "yes"
-vim.opt.statuscolumn = ""
+-- Sign column
+vim.opt.signcolumn = "yes" -- Always show the sign column
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+-- Status column
+vim.opt.statuscolumn = "yes" -- Always show the status column
 
-vim.opt.termguicolors = true
+-- Case insensitive searching
+vim.opt.ignorecase = true -- Ignore case in search patterns
+vim.opt.smartcase = true  -- Override 'ignorecase' if search pattern contains uppercase letters
 
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- Terminal colors
+vim.opt.termguicolors = true -- Enable 24-bit RGB color in the TUI
+
+-- Disable netrw
+vim.g.loaded_netrw = 1       -- Disable netrw
+vim.g.loaded_netrwPlugin = 1 -- Disable netrwPlugin
