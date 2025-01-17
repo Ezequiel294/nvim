@@ -18,7 +18,7 @@ return {
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "isort", "black" },
+			python = { "isort", "autopep8" },
 			c = { "clang-format" },
 			cpp = { "clang-format" },
 			bash = { "shfmt" },
