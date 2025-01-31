@@ -8,4 +8,4 @@ function ColorMyPencils(color, transparent)
 	end
 end
 
-ColorMyPencils("github_dark_dimmed", true)
+ColorMyPencils("github_dark_dimmed", false)
