@@ -13,21 +13,17 @@ vim.opt.tabstop = 4      -- Number of spaces a <Tab> counts for
 vim.opt.shiftwidth = 4   -- Number of spaces to use for each step of (auto)indent
 vim.opt.smarttab = true  -- Insert 'tabstop' number of spaces when pressing <Tab>
 
--- Color column
-vim.opt.colorcolumn = "81" -- Highlight column 81
-
 -- Ruler
 vim.opt.ruler = true -- Show the cursor position all the time
+-- Color column
+vim.opt.colorcolumn = "80" -- Highlight column 80
 
 -- Line wrapping
 vim.opt.wrap = false -- Disable line wrapping
 
 -- Search settings
-vim.opt.hlsearch = false -- Disable search highlight
+vim.opt.hlsearch = true -- Enable search highlight
 vim.opt.incsearch = true -- Enable incremental search
-
--- Mouse support
-vim.opt.mouse = "a" -- Enable mouse support in all modes
 
 -- Scrolling
 vim.opt.scrolloff = 8     -- Minimum number of screen lines to keep above and below the cursor
