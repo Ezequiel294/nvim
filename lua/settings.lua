@@ -39,12 +39,6 @@ vim.opt.splitright = true -- Vertical splits will be to the right
 -- Update time
 vim.opt.updatetime = 1000 -- Faster completion (default is 4000ms)
 
--- Sign column
-vim.opt.signcolumn = "yes" -- Always show the sign column
-
--- Status column
-vim.opt.statuscolumn = "yes" -- Always show the status column
-
 -- Case insensitive searching
 vim.opt.ignorecase = true -- Ignore case in search patterns
 vim.opt.smartcase = true  -- Override 'ignorecase' if search pattern contains uppercase letters
