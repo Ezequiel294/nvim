@@ -15,6 +15,17 @@ return {
 	},
 	-- Everything in opts will be passed to setup()
 	opts = {
+        -- Install formatters automatically
+		mason_install = {
+			"stylua",
+			"isort",
+			"autopep8",
+			"clang-format",
+			"shfmt",
+			"prettierd",
+			"prettier",
+		},
+
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
